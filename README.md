@@ -28,9 +28,9 @@ PredictionErrorDisplay.from_predictions(y_test, y_predict, kind='actual_vs_predi
 ```
 
 #### Results interprtion
-![image](residual_plot_good.png)
+![image](images\residual_plot_good.png)
 
-![image](residual_plot_bad.png)
+![image](images\residual_plot_bad.png)
 
 Your independent variables should describe the relationship so thoroughly that only random error remains. Non-random patterns in your residuals signify that your variables are missing something.
 
@@ -38,7 +38,7 @@ Your independent variables should describe the relationship so thoroughly that o
 --------
 #### **MAE (Mean Absolute Error)**
 average of absolute residuals
-![image](mae_score.png)
+![image](images\mae_score.png)
 
 ```python
 from sklearn.metrics import mean_absolute_error
@@ -48,7 +48,7 @@ mae = mean_absolute_error(y_train, y_pred)
 average of squared residual
 unit = (variableUnit)2
 Sensitive to outliers
-![image](mse_score.png)
+![image](images\mse_score.png)
 
 ```python
 from sklearn.metrics import mean_squared_error
@@ -66,7 +66,7 @@ rmse = mean_squared_error(y_train, y_pred, squared=False)
 
 #### **MAPE (Mean Absolute Percentage Error)**
 Average of absolute of percentage of residual
-![image](mape_score.png)
+![image](images\mape_score.png)
 
 ```python
 from sklearn.metrics import mean_absolute_percentage_error
@@ -83,7 +83,7 @@ It provides an indication of goodness of fit and therefore a measure of how well
 *0.0* A constant model that always predicts the expected (average) value of y, disregarding the input features.
 *-ve* Worst
 
-![image](r2_score.png)
+![image](images\r2_score.png)
 
 ```python
 from sklearn.metrics import r2_score
